@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daxo · Systems &amp; WebAssembly Developer</title>
+    <meta name="description" content="Independent Systems & WebAssembly Developer. Creator of Daxo OS — a Rust microkernel with Ring 3 isolation, ATA driver, and async executor. Self-hosting compiler toolchain to WebAssembly." />
+    <link rel="canonical" href="https://daxo-developer.github.io/" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://daxo-developer.github.io/#person",
+                "name": "Daxo Developer",
+                "alternateName": "daxo-developer",
+                "username": "daxo",
+                "url": "https://daxo-developer.github.io/",
+                "sameAs": [
+                    "https://github.com/daxo-developer",
+                    "https://x.com/DaxoOSDev",
+                    "https://dev.to/aitoolsdxglitch",
+                    "https://daxo-os.hashnode.dev/"
+                ],
+                "jobTitle": "Independent Systems & WebAssembly Developer",
+                "description": "Building low‑level systems: a Rust microkernel (Daxo OS) with hardware privilege isolation, a self‑hosting DSL compiler targeting WebAssembly, and security research.",
+                "knowsAbout": [
+                    "Operating Systems",
+                    "x86_64 Architecture",
+                    "Rust",
+                    "WebAssembly",
+                    "Compiler Design",
+                    "Microkernels",
+                    "Memory Management",
+                    "System Programming"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://daxo-developer.github.io/#website",
+                "url": "https://daxo-developer.github.io/",
+                "name": "Daxo Developer — Systems & WebAssembly",
+                "description": "Portfolio of Daxo Developer: low‑level systems, OS development, compilers, and security.",
+                "publisher": { "@id": "https://daxo-developer.github.io/#person" }
+            },
+            {
+                "@type": "SoftwareSourceCode",
+                "@id": "https://github.com/daxo-developer/daxo_os",
+                "name": "Daxo OS",
+                "description": "A custom x86_64 microkernel written in Rust with hardware privilege separation (Ring 0 → Ring 3), a PIO ATA driver, and a cooperative async executor.",
+                "codeRepository": "https://github.com/daxo-developer/daxo_os",
+                "programmingLanguage": ["Rust", "Assembly"],
+                "author": { "@id": "https://daxo-developer.github.io/#person" }
+            },
+            {
+                "@type": "SoftwareSourceCode",
+                "@id": "https://github.com/daxo-developer/dx-wasm",
+                "name": "DX → WASM Compiler",
+                "description": "Ahead‑of‑time compiler from a custom DSL to WebAssembly with self‑hosting capabilities, linear IR, and compile‑time memory management (scope‑based RC).",
+                "codeRepository": "https://github.com/daxo-developer/dx-wasm",
+                "programmingLanguage": ["Rust", "WebAssembly"],
+                "author": { "@id": "https://daxo-developer.github.io/#person" }
+            },
+            {
+                "@type": "CreativeWork",
+                "@id": "https://dev.to/aitoolsdxglitch/stripping-away-abstractions-how-i-built-a-rust-microkernel-from-scratch-in-100-hours-at-age-13-3cik",
+                "name": "Stripping Away Abstractions — How I Built a Rust Microkernel in 100 Hours",
+                "url": "https://dev.to/aitoolsdxglitch/stripping-away-abstractions-how-i-built-a-rust-microkernel-from-scratch-in-100-hours-at-age-13-3cik",
+                "author": { "@id": "https://daxo-developer.github.io/#person" },
+                "datePublished": "2026-06-20"
+            },
+            {
+                "@type": "WebApplication",
+                "@id": "https://daxo.sh/",
+                "name": "Daxo Terminal",
+                "description": "Interactive terminal‑style portfolio and landing page for Daxo projects.",
+                "url": "https://daxo.sh/",
+                "author": { "@id": "https://daxo-developer.github.io/#person" }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">daxo</span>
+                <span class="logo-bracket">]</span>
+                <span class="logo-prompt">$</span>
+            </div>
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#projects">Projects</a>
+                <a href="#articles">Writing</a>
+                <a href="#stack">Stack</a>
+                <a href="https://github.com/daxo-developer" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="dollar">$</span>
+                    <span class="cmd">whoami</span>
+                    <span class="blink">█</span>
+                </h1>
+                <p class="hero-sub">
+                    <span class="keyword">fn</span>
+                    <span class="ident">Daxo</span>
+                    <span class="op">::</span>
+                    <span class="fn">developer</span>
+                    <span class="paren">()</span>
+                    <span class="arrow">→</span>
+                    <span class="type">Systems &amp; WebAssembly</span>
+                </p>
+                <div class="hero-tags">
+                    <span class="tag">#rust</span>
+                    <span class="tag">#microkernel</span>
+                    <span class="tag">#webassembly</span>
+                    <span class="tag">#compilers</span>
+                    <span class="tag">#low‑level</span>
+                </div>
+                <div class="hero-links">
+                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                    <a href="https://github.com/daxo-developer" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                    <a href="https://daxo.sh/" target="_blank" rel="noopener" class="btn btn-outline">Daxo.sh</a>
+                </div>
+            </div>
+            <div class="hero-ascii">
+                <pre>
+     ######      ###    ##     ##  #######     #######   ######  
+     ##   ##    ## ##    ##   ##  ##     ##   ##     ## ##    ## 
+     ##    ##  ##   ##    ## ##   ##     ##   ##     ## ##       
+     ##    ## ##     ##    ###    ##     ##   ##     ##  ######  
+     ##    ## #########   ## ##   ##     ##   ##     ##       ## 
+     ##   ##  ##     ##  ##   ##  ##     ##   ##     ## ##    ## 
+     ######   ##     ## ##     ##  #######     #######   ######  
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> ls -la ~/projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">⚙️</span>
+                        <h3>Daxo OS</h3>
+                    </div>
+                    <p class="project-desc">
+                        A custom x86_64 microkernel written in Rust from scratch. Features hardware privilege 
+                        isolation (Ring 0 → Ring 3), a PIO ATA driver, a cooperative async executor, and 
+                        a fully custom memory management subsystem.
+                    </p>
+                    <div class="project-meta">
+                        <span class="lang">Rust</span>
+                        <span class="lang">Assembly</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/daxo-developer/daxo_os" target="_blank" rel="noopener">Repository</a>
+                        <a href="https://dev.to/aitoolsdxglitch/stripping-away-abstractions-how-i-built-a-rust-microkernel-from-scratch-in-100-hours-at-age-13-3cik" target="_blank" rel="noopener">Blog</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🖥️</span>
+                        <h3>DX → WASM Compiler</h3>
+                    </div>
+                    <p class="project-desc">
+                        Ahead‑of‑time compiler for a custom DSL, featuring a full pipeline: Lexer → Parser (AST) 
+                        → Linear IR → WebAssembly binary emitter. Includes scope‑based compile‑time memory 
+                        management and a self‑hosting compiler written in the language itself.
+                    </p>
+                    <div class="project-meta">
+                        <span class="lang">Rust</span>
+                        <span class="lang">WebAssembly</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/daxo-developer/dx-wasm" target="_blank" rel="noopener">Repository</a>
+                        <a href="https://daxo-developer.github.io/dx-wasm/" target="_blank" rel="noopener">Playground</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🌐</span>
+                        <h3>Daxo.sh</h3>
+                    </div>
+                    <p class="project-desc">
+                        Interactive terminal‑style portfolio and landing page. Serves as the central entry point 
+                        for all Daxo projects, featuring a CLI‑inspired interface with real‑time command feedback.
+                    </p>
+                    <div class="project-meta">
+                        <span class="lang">HTML</span>
+                        <span class="lang">CSS</span>
+                        <span class="lang">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://daxo.sh/" target="_blank" rel="noopener">Live</a>
+                        <a href="https://github.com/daxo-developer/daxo-developer.github.io" target="_blank" rel="noopener">Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="section stack">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> cat ~/stack.txt</h2>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Rust</li>
+                        <li>WebAssembly (WAT/Text)</li>
+                        <li>x86_64 Assembly</li>
+                        <li>JavaScript / Node.js</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Systems &amp; OS</h4>
+                    <ul>
+                        <li>Microkernel Architecture</li>
+                        <li>Memory Management (Paging)</li>
+                        <li>GDT / IDT / TSS</li>
+                        <li>Interrupt Handling (PIC)</li>
+                        <li>ATA PIO Driver</li>
+                        <li>Privilege Rings (Ring 0 → Ring 3)</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Compilers &amp; Tooling</h4>
+                    <ul>
+                        <li>Lexer / Parser (Recursive Descent)</li>
+                        <li>AST → IR Translation</li>
+                        <li>WASM Binary Emission (LEB128)</li>
+                        <li>Self‑hosting Compiler Pipeline</li>
+                        <li>Scope‑based Memory Management</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Security</h4>
+                    <ul>
+                        <li>Hardware Isolation</li>
+                        <li>Syscall Infrastructure</li>
+                        <li>Vulnerability Research (HackerOne)</li>
+                        <li>OSINT &amp; Linux Pentesting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="section articles">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> grep -r "Daxo" ~/blog/</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <a href="https://dev.to/aitoolsdxglitch/stripping-away-abstractions-how-i-built-a-rust-microkernel-from-scratch-in-100-hours-at-age-13-3cik" target="_blank" rel="noopener">
+                        <h3>Stripping Away Abstractions</h3>
+                        <p>How I built a Rust microkernel from scratch in 100 hours at age 13</p>
+                        <span class="article-date">June 2026</span>
+                        <span class="article-platform">Dev.to</span>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="https://daxo-os.hashnode.dev/i-built-a-rust-os-in-100-hours-im-13-heres-how" target="_blank" rel="noopener">
+                        <h3>I Built a Rust OS in 100 Hours. I'm 13. Here's How.</h3>
+                        <p>Microkernel, custom ATA driver, async in Ring 0, and a bit of TempleOS madness.</p>
+                        <span class="article-date">June 2026</span>
+                        <span class="article-platform">Hashnode</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2026 Daxo Developer. Built on bare metal.</p>
+                <p class="footer-license">Code &amp; content released under MIT unless otherwise noted.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/daxo-developer" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="assets/social/github.svg" alt="GitHub" class="social-icon"> GitHub
+                </a>
+                <a href="https://x.com/DaxoOSDev" target="_blank" rel="noopener" aria-label="X / Twitter">
+                    <img src="assets/social/twitter.svg" alt="X" class="social-icon"> X
+                </a>
+                <a href="https://dev.to/aitoolsdxglitch" target="_blank" rel="noopener" aria-label="Dev.to">
+                    <img src="assets/social/devto.svg" alt="Dev.to" class="social-icon"> Dev.to
+                </a>
+                <a href="https://daxo-os.hashnode.dev/" target="_blank" rel="noopener" aria-label="Hashnode">
+                    <img src="assets/social/hashnode.svg" alt="Hashnode" class="social-icon"> Hashnode
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
